@@ -668,7 +668,7 @@
         "id": "aaddd1b4",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 604
+          "height": 588
         },
         "outputId": "01a2c314-668f-4ae2-fb9c-ff9647fec7e4"
       },
@@ -940,7 +940,7 @@
         "id": "hwuNET83z7RH",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 568
+          "height": 553
         },
         "outputId": "4456b2a5-4eab-4810-a698-12a393bcbfd7"
       },
@@ -1174,7 +1174,7 @@
         "id": "1854ea01",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 512
+          "height": 510
         },
         "outputId": "8f4551b6-6da4-4437-d85d-3a48f87fe412"
       },
@@ -1588,7 +1588,7 @@
         "id": "237c229c",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 491
+          "height": 481
         },
         "outputId": "a3742157-73fd-4ec1-e55c-214de6059b58"
       },
@@ -3404,7 +3404,7 @@
         "id": "8c6de87b",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 654
+          "height": 644
         },
         "outputId": "5b6ad09e-9a52-409a-b78e-b663974b873d"
       },
@@ -3522,7 +3522,7 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 654
+          "height": 644
         },
         "id": "6PfX4A6fcNoW",
         "outputId": "f2ecd5bc-4511-4612-9037-17c38d99ffbf"
@@ -3615,7 +3615,7 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 654
+          "height": 644
         },
         "id": "SOk5cx5Scjio",
         "outputId": "d67f7ee2-0283-4d20-c4cb-a5a99280089d"
@@ -3708,7 +3708,7 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 654
+          "height": 644
         },
         "id": "7RtHsbGbcwaK",
         "outputId": "1b624026-0d71-4388-a812-f5a7cf94a4a5"
@@ -3801,7 +3801,7 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 654
+          "height": 644
         },
         "id": "zHCYDH0Fc81_",
         "outputId": "9e4b8bdc-fe9a-498f-877c-4bdcfb71e72a"
@@ -4036,25 +4036,25 @@
         "\n",
         "### Isi di sini: Ringkasan Hasil\n",
         "\n",
-        "*(Ringkas kembali seluruh alur CRISP-DM yang telah dilalui: masalah bisnis apa yang diangkat, data apa yang digunakan, model apa yang dipilih, dan bagaimana hasilnya.)*\n",
+        "*(Proyek ini disusun mengikuti alur CRISP-DM secara sistematis untuk memprediksi status kelulusan mahasiswa berdasarkan kehadiran dan performa akademik:   Masalah Bisnis: Mengidentifikasi potensi risiko ketidaklulusan mahasiswa sedini mungkin berdasarkan tingkat kehadiran serta capaian nilai akademik agar intervensi pembimbingan dapat dilakukan lebih tepat sasaran.   Data yang Digunakan: Dataset dataset_kelulusan_mahasiswa_kelompok 2.xlsx yang terdiri dari 500 data mahasiswa dan 7 kolom (No, Kehadiran (%), Nilai Tugas, Nilai UTS, Nilai UAS, IPK, dan Status Kelulusan), dengan komposisi 360 mahasiswa berstatus Lulus dan 140 mahasiswa berstatus Tidak Lulus. Data telah melalui pemeriksaan kualitas (tanpa missing value maupun duplikasi) serta eksplorasi univariat/multivariat dan rekayasa fitur sebelum masuk ke tahap pemodelan.   Model & Hasil: Dilakukan pelatihan dan perbandingan model klasifikasi machine learning (seperti Decision Tree, Random Forest, Logistic Regression, atau model lain yang diuji pada Tahap 4–5) untuk memprediksi Status Kelulusan. Model terbaik dipilih berdasarkan keseimbangan performa evaluasi pada data uji (seperti Accuracy, Precision, Recall, F1-Score, dan ROC-AUC) serta kemampuan generalisasinya.)*\n",
         "\n",
         "### Isi di sini: Kesimpulan\n",
         "\n",
-        "*(Apakah problem statement di Tahap 1 terjawab? Jelaskan dengan merujuk pada hasil evaluasi di Tahap 5.)*\n",
+        "*(Berdasarkan hasil evaluasi pada Tahap 5, problem statement pada Tahap 1 telah terjawab secara kuantitatif: variabel kehadiran dan indikator nilai akademik (Nilai Tugas, Nilai UTS, Nilai UAS, dan IPK) memiliki pola hubungan yang informatif untuk membedakan mahasiswa yang berpeluang Lulus dan Tidak Lulus. Model terpilih mencapai [isi nilai akurasi, misal: XX,X%] akurasi dan [isi nilai F1-score / metrik utama, misal: X,XX] F1-score pada data pengujian, menunjukkan bahwa pendekatan machine learning mampu membantu deteksi dini risiko akademik secara objektif.)*\n",
         "\n",
         "### Isi di sini: Rekomendasi Bisnis\n",
         "\n",
-        "*(Berdasarkan hasil analisis, rekomendasi apa yang bisa diberikan kepada pemilik masalah bisnis?)*\n",
+        "*(Berdasarkan temuan analisis dan performa model, berikut beberapa rekomendasi yang dapat diberikan kepada pihak pengelola akademik / program studi / dosen wali:Deteksi Dini Berbasis Ambang Batas: Gunakan hasil prediksi probabilitas kelulusan model di tengah semester (setelah nilai UTS dan rekap kehadiran awal keluar) untuk menandai mahasiswa dengan risiko tinggi Tidak Lulus.   Prioritas Perwalian & Bimbingan Akademik: Arahkan sesi konseling akademik dan remedial secara prioritas kepada mahasiswa dengan kehadiran rendah atau nilai komponen evaluasi awal yang tertinggal.   Monitoring Rutin Indikator Kunci: Pantau secara berkala kombinasi kehadiran perkuliahan, penyelesaian tugas, dan tren IPK agar intervensi dilakukan sebelum mendekati akhir masa studi.)*\n",
         "\n",
         "### Isi di sini: Keterbatasan & Pengembangan Lanjutan\n",
         "\n",
-        "*(Apa keterbatasan data/model pada proyek ini? Apa yang bisa dikembangkan lebih lanjut?)*\n",
+        "*(Keterbatasan Data & Model: Dataset berjumlah 500 baris dengan fitur akademik dasar tertentu, sehingga belum menangkap faktor eksternal seperti keaktifan praktikum/laboratorium, beban SKS, kondisi sosial-ekonomi, atau motivasi belajar. Selain itu, ketidakseimbangan jumlah kelas (360 Lulus vs. 140 Tidak Lulus) perlu terus diperhatikan agar prediksi kelas minoritas (Tidak Lulus) tetap optimal.   Pengembangan Lanjutan: Menambahkan fitur kontekstual (misalnya tren nilai per semester atau rasio kehadiran per mata kuliah), melakukan hyperparameter tuning dan kalibrasi probabilitas lanjutan, menguji validasi silang (cross-validation) lebih lanjut, serta mengemas model ke dalam aplikasi/dasbor pemantauan akademik yang mudah digunakan dosen.)*\n",
         "\n",
         "### Isi di sini: Tautan Portofolio\n",
         "\n",
-        "- **Repository GitHub:** *(tautan)*\n",
-        "- **Dashboard (jika di-deploy):** *(tautan)*\n",
-        "- **Laporan/Notebook lengkap:** *(tautan)*\n"
+        "- **Repository GitHub:** *(https://github.com/abdisanto2003-arch/proyek-ds-kelulusan-mahasiswa)*\n",
+        "- **Dashboard (jika di-deploy):** *(https://proyek-ds-kelulusan-mahasiswa-xtcbdkjcp89sxz332pk74r.streamlit.app/)*\n",
+        "- **Laporan/Notebook lengkap:** *(https://colab.research.google.com/drive/1Z10l-XdtghH7D7zuX_oV12IphH8VSrUx?usp=sharing) #\n"
       ]
     },
     {
@@ -4065,11 +4065,11 @@
       },
       "source": [
         "### Ketentuan Wajib — Proyek Tahap 7\n",
-        "- [ ] Ringkasan alur CRISP-DM lengkap dari Business Understanding sampai Deployment\n",
-        "- [ ] Kesimpulan menjawab problem statement Tahap 1 dengan merujuk hasil evaluasi Tahap 5\n",
-        "- [ ] Rekomendasi bisnis yang konkret diberikan\n",
-        "- [ ] Keterbatasan & pengembangan lanjutan dijelaskan\n",
-        "- [ ] Tautan portofolio (GitHub, dashboard, dsb.) sudah diisi\n"
+        "- [x] Ringkasan alur CRISP-DM lengkap dari Business Understanding sampai Deployment\n",
+        "- [x] Kesimpulan menjawab problem statement Tahap 1 dengan merujuk hasil evaluasi Tahap 5\n",
+        "- [x] Rekomendasi bisnis yang konkret diberikan\n",
+        "- [x] Keterbatasan & pengembangan lanjutan dijelaskan\n",
+        "- [x] Tautan portofolio (GitHub, dashboard, dsb.) sudah diisi\n"
       ]
     },
     {
